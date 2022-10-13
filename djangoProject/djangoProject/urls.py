@@ -28,7 +28,7 @@ urlpatterns = [
     #path('catalog/', include('catalog.urls')),
     #path('', RedirectView.as_view(url='catalog/')),
     path('', views.index, name="index"), #Homepage
-    path('about', views.about, name="about"),
+    path('notes', views.notes, name="notes"),
     path('contact', views.contact, name="contact"),
 ] # + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
