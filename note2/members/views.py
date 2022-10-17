@@ -5,5 +5,5 @@ from django.urls import reverse_lazy
 
 class UserRegisterView(generic.CreateView):
     form_class = UserChangeForm
-    template = 'registration/register.html'
+    template_name = 'register.html'
     success_url = reverse_lazy('log')
