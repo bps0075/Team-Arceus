@@ -3,12 +3,9 @@
 {% block content %}
 
 <h1>Notes Test</h1>
-
 <form method="notes">
-
     {% csrf_token %}
     {% include 'navbar.html' %}
-    {{form.as_p}}
-    {{form.media}}
+
 
     {% endblock %}

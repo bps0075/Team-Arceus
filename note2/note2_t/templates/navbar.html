@@ -1,7 +1,10 @@
 <div>
-    {% url 'index' as index_url %}
-    <span>{% if request.path == index_url %}Home{% else %}<a href="{{ home_url }}">Home</a>{% endif %}</span>
-     {% url 'register' as register_url %}
-    <span>{% if request.path == register_url %}Registration{% else %}<a href="{{ register_url }}">Home</a>{% endif %}</span>
-
+    {% url 'home' as home_url %}
+    <span>{% if request.path == home_url %}Home{% else %}<a href="{{ home_url }}">Home</a>{% endif %}</span>
+    {% url 'notes' as notes_url %}
+    <span>{% if request.path == notes_url %}Notes{% else %}<a href="{{ notes_url }}">Notes</a>{% endif %}</span>
+    {% url 'register' as register_url %}
+    <span>{% if request.path == register_url %}Registration{% else %}<a href="{{ register_url }}">Register</a>{% endif %}</span>
+    {% url 'register' as register_url %}
+    <span>{% if request.path == register_url %}Registration{% else %}<a href="{{ register_url }}">Register</a>{% endif %}</span>
 </div>
