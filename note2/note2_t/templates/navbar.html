@@ -32,11 +32,11 @@
         </li>-->
         <ul>
             {% url 'home' as home_url %}
-            <span><a href="{{ home_url }}" class="btn btn-info">Home</a></span>
+            <span><a href="{{ home_url }}" class="btn btn-secondary">Home</a></span>
             {% url 'notes' as notes_url %}
             <span><a href="{{ notes_url }}" class="btn btn-secondary">Notes</a></span>
             {% url 'register' as register_url %}
-            <span><a href="{{ register_url }}" class="btn btn-primary">Register</a></span>
+            <span><a href="{{ register_url }}" class="btn btn-secondary">Register</a></span>
             {% url 'register' as register_url %}
             <span><a href="{{ register_url }}" class="btn btn-secondary">Register</a></span>
         </ul>
@@ -60,11 +60,11 @@
 -->
         <ul>
         {% url 'home' as home_url %}
-        <span><a href="{{ home_url }}" class="btn btn-$orange-500">Home</a></span>
+        <span><a href="{{ home_url }}" class="btn btn-primary">Home</a></span>
         {% url 'notes' as notes_url %}
         <span><a href="{{ notes_url }}" class="btn btn-secondary">Notes</a></span>
         {% url 'register' as register_url %}
-        <span><a href="{{ register_url }}" class="btn btn-primary">Register</a></span>
+        <span><a href="{{ register_url }}" class="btn btn-secondary">Register</a></span>
         {% url 'register' as register_url %}
         <span><a href="{{ register_url }}" class="btn btn-secondary">Register</a></span>
         </ul>
