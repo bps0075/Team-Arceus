@@ -4,38 +4,26 @@
 
 {% block content %}
 
-<nav class="navbar bg-light">
+<!--<nav class="navbar bg-light">
   <div class="container-fluid">
-      <h1 style="background:#FFD493;">
-        <img src="https://live.staticflickr.com/65535/52449120884_31c76e98ff_s.jpg" alt="Logo" width="75" height= "75" class="d-inline-block align-text-top">
-      Notes Test</h1>
+      <h1 style="background:#FFD493;"></h1>
   </div>
+</nav>-->
+<nav class="navbar navbar-expand-lg" style="background:orange">
+    <h1>Homepage</h1>
 </nav>
 
-<h1 style="background:orange;">Notes Test</h1>
 <form method="notes">
     {% csrf_token %}
     {% include 'navbar.html' %}
 </form>
 
-<br>
+<!--<br>
     <div class="row">
         <div style="text-align: center">
             <img src="https://live.staticflickr.com/65535/52438327706_1bb446fd2a_m.jpg"/>
         </div>
     </div>
-</br>
-
-<br>
-    <div class="row">
-        <div style="text-align: center">
-            <img src="https://live.staticflickr.com/65535/52449120884_31c76e98ff_s.jpg"/>
-        </div>
-    </div>
-</br>
-
-<style>
-    body { background:#FFD493 }
-</style>
+</br>-->
 
 {% endblock %}
