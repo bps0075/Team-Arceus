@@ -6,3 +6,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 class notes(models.Model):
     body = RichTextUploadingField()
 
+class save():
+
+# class read():
+
