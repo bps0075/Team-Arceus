@@ -20,5 +20,9 @@
         </div>
     </div>
 </br>-->
-
+{% for notes in object_list %}
+{{notes.title}} - <a href="{% url 'update_notes' notes.pk %}"  class="btn btn-secondary btn-sm"> Edit</a>
+<br/>
+<br/>
+{%endfor%}
 {% endblock %}
