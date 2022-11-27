@@ -6,7 +6,10 @@
     <h1>Notes</h1>
 </nav>
         {% include 'navbar.html' %}
-
-        {{form.as_p}}
-        {{form.media}}
-{% endblock %}
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    {{form.media}}
+    {{ text_content | safe }}.
+    <Button class="btn btn-secondary">Save</Button>
+    {% endblock %}
